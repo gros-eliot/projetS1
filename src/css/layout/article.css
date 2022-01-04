@@ -1,9 +1,32 @@
-.article :not(img, div, h3) {
+.article :not(img, div, h3, .article2-end__caption, hr) {
     margin: 5% 10% 5% 10%;
 }
 
 .article__img-center {
     display: flex;
     justify-content: center;
+}
+
+
+
+.article2-end {
+    display: flex;
+    flex-direction: row;
+}
+
+.article2-end__caption {
+    margin: 5%;
+}
+.article2-end__img {
+    object-fit: contain;
+}
+
+.article-hr {
+    border: none;
+    border-top: 2px solid var(--marron-clair);
+}
+
+.article2-video, .article3-img  {
+    padding: 3% 0% 3% 0%;
 }
 

@@ -22,6 +22,7 @@
     width: 120px;
     height: 1.5px;
     background-color: var(--bleu);
+    margin-top: 10%;
 
     display: block;
     margin-left: auto;
