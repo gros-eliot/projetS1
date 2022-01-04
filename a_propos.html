@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'"><!--ligne pour le menu hamburger-->
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evive - à propos</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Evive</h1>
+    </header>
+
+    <main>
+        <h2>À propos</h2>
+        <div class="title-redline"></div>
+        <p>
+            "Evive" est un site Mobile First,
+            issu d'un projet. Le livre
+            augmenté, sujet du projet de S1
+            du département MMI
+            Montbéliard. Ce projet consiste à
+            choisir un livre, un film et ressortir
+            un élément en commun.
+            Ici l'élément en question est la
+            survie.
+
+            Ce projet a été effectué par prêt
+            de 80 élèves.
+        </p>
+
+        <img src="assets/img/mmi_logo_about.png" alt="Logo du département MMI de Montbéliard">
+
+        <p class="button-voir">En voir +</p>
+    </main>
+    <footer class="footer">
+        <p class="footer__caption">
+            Mention Légale : “projet réalisé dans le cadre d’un exercice pédagogique au département 
+            <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>” 
+        </p>
+        <img src="assets/img/mmi_logo_footer.png" alt="Logo du département MMI de Montbéliard" class="footer__img">
+    </footer>
+</main>
+</body>
+</html>
