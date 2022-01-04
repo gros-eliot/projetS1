@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'"><!--ligne pour le menu hamburger-->
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evive - contact</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Evive</h1>
+    </header>
+
+    <main>
+        <form>
+            <label for="lastname">Nom</label><br>
+            <input type="text" name="lastname" id="lastname"  >
+            <br>
+
+            <label for="mail">Mail</label><br>
+            <input type="email" name="mail" id="mail">
+            <br>
+
+            <label for="message">Message</label><br>
+            <textarea id="message"></textarea>
+            <br>
+        </form>
+    </main>
+
+
+    <footer class="footer">
+        <p class="footer__caption">
+            Mention Légale : “projet réalisé dans le cadre d’un exercice pédagogique au département 
+            <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>” 
+        </p>
+        <img src="assets/img/mmi_logo_footer.png" alt="Logo du département MMI de Montbéliard" class="footer__img">
+    </footer>
+</body>
+</html>
