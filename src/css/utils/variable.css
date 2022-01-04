@@ -1,0 +1,20 @@
+:root {
+/* Color styles */
+--blanc: rgba(255, 255, 255, 1);
+--bleu: rgba(113, 144, 191, 1);
+--marron-clair: rgba(181, 102, 5, 1);
+--marron-fonce: rgba(103, 59, 20, 1);
+--noir: rgba(0, 0, 0, 1);
+--gris: rgba(113, 113, 113, 1);
+
+/* Text-size styles */
+--main-font-header: 2.25rem;
+--headline: 3rem;
+--heading-2-article: 1.875rem;
+--subheading: 1.563rem;
+
+--main-text: 0.938rem;
+--quote: 1.125rem;
+
+--button: 1.25rem;
+}
