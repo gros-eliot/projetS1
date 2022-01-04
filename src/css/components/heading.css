@@ -3,7 +3,7 @@
     margin-top: -5px;
 }
 
-.title-redline {
+.title-redline, .title-redline-index {
     width: 30px;
     height:1.5px;
     background-color: var(--marron-fonce);
@@ -11,6 +11,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.title-redline-index {
+    margin-top: -8%;
 }
 
 .heading__caption {
