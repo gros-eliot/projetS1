@@ -1,8 +1,6 @@
 .heading__title {
-    font-size: var(--headline);
-    text-align: center;
-    font-weight: normal;
-    color: var(--noir);
+    font-size: var(--headline); 
+    margin-top: -5px;
 }
 
 .title-redline {
@@ -13,11 +11,20 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -7%;
 }
 
 .heading__caption {
     color: var(--noir);
     margin: 5% 10% 15% 10%;
+}
+
+.blueline {
+    width: 120px;
+    height: 1.5px;
+    background-color: var(--bleu);
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 

@@ -1,0 +1,9 @@
+.article :not(img, div, h3) {
+    margin: 5% 10% 5% 10%;
+}
+
+.article__img-center {
+    display: flex;
+    justify-content: center;
+}
+

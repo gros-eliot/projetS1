@@ -30,12 +30,24 @@ h1 {
     font-size: var(--main-font-header);
 }
 
+h2, h3 {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: normal;
+    color: var(--noir);
+}
+h2 {
+    font-size: var(--heading-2-article);
+    text-align: center;
+}
+h3 {
+    font-size: var(--subheading);
+    text-align: center;
+}
 .noscroll,
 .noscroll body {
   overflow: hidden;
 }
 
 main {
-    margin-top: 20%;
+    margin-top: 30%;
 }
-

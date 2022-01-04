@@ -8,3 +8,9 @@
     flex-direction: row;
     align-items: center;
 }
+
+.card__caption {
+    padding: 3%;
+}
+
+
