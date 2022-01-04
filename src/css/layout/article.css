@@ -23,7 +23,7 @@
 
 .article-hr {
     border: none;
-    border-top: 2px solid var(--marron-clair);
+    border-top: 1.5px solid var(--marron-clair);
 }
 
 .article2-video, .article3-img  {

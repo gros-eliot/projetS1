@@ -1,6 +1,7 @@
 .footer {
     background-color: var(--marron-fonce);
     display: flex;
+    align-items: flex-end;
     flex-direction: row;
     padding: 6%;
 

@@ -19,4 +19,7 @@
 @import url(layout/header.css);
 @import url(layout/footer.css);
 @import url(layout/article.css);
+@import url(layout/about.css);
+@import url(layout/projects.css);
+@import url(layout/contact.css);
 

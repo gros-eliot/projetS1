@@ -1,0 +1,16 @@
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input, textarea {
+    border: 1px solid var(--bleu);
+    width: 300px;
+    padding: 4%;
+    margin-top: 10%;
+}
+
+textarea {
+    width: 300px;
+}

@@ -1,0 +1,9 @@
+.about-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-caption {
+    padding-top: 20%;
+    padding-left: 5%;
+}
