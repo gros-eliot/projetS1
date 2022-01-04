@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--marron-fonce);
+    display: flex;
+    flex-direction: row;
+    padding: 6%;
+
+    color: var(--blanc);
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer__link {
+    color: var(--blanc);
+}

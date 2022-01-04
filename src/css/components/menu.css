@@ -1,0 +1,116 @@
+/*paramètres généraux du menu*/
+.menu {
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    position: fixed;
+    top: 0; bottom: 0;
+    left: 0; right : 0;
+    background-color: var(--marron-clair);
+    font-family: 'Titillium Web', sans-serif;
+    transition: all .3s ease-in-out;
+  } 
+
+  /*ouvrir le menu*/
+.menu--open {
+    visibility: visible;
+    opacity: 1;
+}
+
+  /*---------------------*/
+  /*ASPECT DU MENU OUVERT*/
+  /*---------------------*/
+
+  /*marges menu (on modifie l'ul)*/
+.menu__list {
+    margin-top: 5vh ;
+    margin-left: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+  /*espace entre chaque item du menu + ligne horizontale bleue*/
+.menu__item {
+    margin: 6% 0 6% 0;
+    border-top: 2px solid var(--bleu);
+    padding-top: 25px;
+}
+
+
+.last-menu__item {
+    border-bottom: 2px solid var(--bleu);
+    padding-bottom: 25px;
+}
+
+.menu__title, .menu__end {
+    font-family: 'Lobster', sans-serif;
+    font-size: var(--main-font-header);
+    color: var(--blanc);
+    text-align: center;
+    padding: 30% 0 40% 0;
+}
+.menu__title {
+    padding-left: 5px;
+}
+
+
+  /* modification de l'apparence des liens du menu*/
+.menu__link {
+    color: var(--blanc);
+    text-decoration: none;
+    font-size: var(--subheading);
+    font-weight:100;
+}
+
+
+
+
+
+
+
+
+/* Mise en forme du bouton de menu "Hamburger" */
+.menu-btn {
+    position: relative;
+    z-index: 3;
+    width: 30px;  
+  }
+
+        /*Mise en forme des barres du menu*/
+  .menu-btn__bar,
+  .menu-btn__bar::before,
+  .menu-btn__bar::after {
+    content: '';
+    background: var(--blanc);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 10;
+    transition: all .3s ease-in-out;
+  }
+
+  .menu-btn__bar::before {
+    top: -10px;
+  }
+  
+  .menu-btn__bar::after {
+    top: 10px;
+  }
+  
+
+/* Transformation en croix*/
+.menu-btn--open .menu-btn__bar,
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(135deg);
+}
+
+.menu-btn--open .menu-btn__bar::before,
+.menu-btn--open .menu-btn__bar::after {
+  transform: rotate(90deg);
+  top: 0;
+}

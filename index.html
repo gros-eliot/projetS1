@@ -10,13 +10,40 @@
 </head>
 <body>
     <header class="header">
-        <h1 class="header__title">Evive</h1>
+        <div class="header__title__div">
+            <h1><a href="/" class="header__title">Evive</a></h1>
+        </div>
+
+        <div class="header__menu-div">
+            <div class="header__menu-btn-div">
+                <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                    x-on:click="menuIsOpen = !menuIsOpen" 
+                    :class="menuIsOpen && 'menu-btn--open'">
+                    <span class="menu-btn__bar"></span>
+                </button>
+            </div>
+
+            <nav  class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list listUnstyled">
+                    <li class="menu__title">Menu</li>
+                    <li class="menu__item"><img src="public/img/Walking_dead_logo.svg" alt="logo menu"><a href="walkingdead.html" class="menu__link">The Walking Dead</a></li>
+                    <li class="menu__item"><img src="public/img/Revenant_logo.svg" alt="logo menu"><a href="the_revenant.html" class="menu__link">The Revenant</a></li>
+                    <li class="menu__item"><img src="public/img/Survie.svg" alt="logo menu"><a href="survie.html" class="menu__link">La survie</a></li>
+                    <li class="menu__item"><img src="public/img/Info.svg" alt="logo menu"><a href="a_propos.html" class="menu__link">À propos</a></li>
+                    <li class="menu__item"><img src="public/img/Projects.svg" alt="logo menu"><a href="autres_projets.html" class="menu__link">Autres projets</a></li>
+                    <li class="menu__item last-menu__item"><img src="public/img/Contact.svg" alt="logo menu"><a href="contact.html" class="menu__link">Contact</a></li>
+                    <li class="menu__end">Evive</li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <div class="hero">
+            <div class="hero__caption__div">
+                <h2 class="hero__caption">Explorez et survivez dans  différentes dimensions</h2>
+            </div>
             <img src="public/img/hero_bg.png" alt="Hero page d'accueil" class="hero__bg">
-            <h2 class="hero__caption">Explorez et survivez dans  différentes dimensions</h2>
         </div>
 
         <div>
@@ -25,29 +52,29 @@
 
         <div class="heading">
             <img src="public/img/accueil_heading.png" alt="Tente de survie" class="heading_img">
-            <h2>Voyagez</h2>
+            <h2 class="heading__title">Voyagez</h2>
             <div class="title-redline"></div>
-            <p>À travers différentes histoires de survie issues de différents supports.</p>
+            <p class="heading__caption">À travers différentes histoires de survie issues de différents supports.</p>
         </div>
 
         <div class="homepage__articles">
-            <article>
-                <img src="public/img/accueil_art1.png" alt="logo The Walking Dead" class="homepage__articles__img-left">
-                <p class="homepage__articles__caption">Prenez goût à l’infâme évolution d’un personnage, devenant un gouverneur tyrannique.</p>
-                <p class="button-more"><a href=walkingdead.html>En savoir +</a></p>
-            </article>
+            <div class="card">
+                <img src="public/img/accueil_art1.png" alt="logo The Walking Dead" class="card__img">
+                <p class="card__caption">Prenez goût à l’infâme évolution d’un personnage, devenant un gouverneur tyrannique.</p>
+            </div>
+            <div class="button-more-div"><a href=walkingdead.html class="button-more">En savoir +</a></div>
 
-            <article>
-                <p class="homepage__articles__caption">Vivez l’incroyable aventure de Glass, un trappeur laissé pour mort qui entreprend un voyage de 300 km.</p>
-                <img src="public/img/accueil_art2.png" alt="logo The Revenant" class="homepage__articles__img-right">
-                <p class="button-more"><a href=the_revenant.html>En savoir +</a></p>
-            </article>
+            <div class="card">
+                <p class="card__caption">Vivez l’incroyable aventure de Glass, un trappeur laissé pour mort qui entreprend un voyage de 300 km.</p>
+                <img src="public/img/accueil_art2.png" alt="logo The Revenant" class="card__img">
+            </div>
+            <div class="button-more-div"><a href=the_revenant.html class="button-more">En savoir +</a></div>
 
-            <article>
-                <img src="public/img/accueil_art3.png" alt="Photo représentant un survivaliste" class="homepage__articles__img-left">
-                <p class="homepage__articles__caption">Comprenez la survie sous différents aspects.</p>
-                <p class="button-more"><a href=survie.html>En savoir +</a></p>
-            </article>
+            <div class="card">
+                <img src="public/img/accueil_art3.png" alt="Photo représentant un survivaliste" class="card__img">
+                <p class="card__caption">Comprenez la survie sous différents aspects.</p>
+            </div>
+            <div class="button-more-div"><a href=survie.html class="button-more">En savoir +</a></div>
 
         </div>
     
@@ -56,11 +83,9 @@
     <footer class="footer">
         <p class="footer__caption">
             Mention Légale : “projet réalisé dans le cadre d’un exercice pédagogique au département 
-            <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>” 
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>” 
         </p>
         <img src="public/img/mmi_logo_footer.png" alt="Logo du département MMI de Montbéliard" class="footer__img">
     </footer>
-    
-    </main>
 </body>
 </html>

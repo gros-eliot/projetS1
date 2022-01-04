@@ -8,6 +8,13 @@
 /*Base*/
 @import url(base/main.css);
 @import url(base/media.css);
+
+/*Components*/
+@import url(components/hero.css);
+@import url(components/menu.css);
+@import url(components/heading.css);
+@import url(components/card.css);
+@import url(components/button.css);
 /*Layout*/
 @import url(layout/header.css);
 @import url(layout/footer.css);

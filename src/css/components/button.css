@@ -1,0 +1,19 @@
+.button-more-div {
+    display: flex;
+    justify-content: center;
+
+    padding: 5%;
+}
+.button-more {
+    background-color: var(--blanc);
+    padding: 3px 30px 3px 30px;
+    
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: var(--button);
+    text-decoration: none;
+    color: var(--marron-fonce);
+
+    border: 2px solid var(--marron-fonce);
+    border-radius: 50px;
+}

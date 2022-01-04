@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.listUnstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Titillium web', sans-serif;
+    font-size: var(--main-text);
+    color: var(--gris);
+}
+
+h1 {
+    font-family: 'Lobster', sans-serif;
+    color: var(--blanc);
+    font-weight: 100;
+    font-size: var(--main-font-header);
+}
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}
+
+main {
+    margin-top: 20%;
+}
+
