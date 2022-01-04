@@ -1,12 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'"><!--ligne pour le menu hamburger-->
 <head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Evive - accueil</title>
 </head>
 <body>
-    <h1>test commit</h1>
+    <header class="header">
+        <h1 class="header__title">Evive</h1>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="assets/img/hero_bg.png" alt="Hero page d'accueil" class="hero__bg">
+            <h2 class="hero__caption">Explorez et survivez dans  différentes dimensions</h2>
+        </div>
+
+        <div>
+            <!--carousel-->
+        </div>
+
+        <div class="heading">
+            <img src="assets/img/accueil_heading.png" alt="Tente de survie" class="heading_img">
+            <h2>Voyagez</h2>
+            <div class="title-redline"></div>
+            <p>À travers différentes histoires de survie issues de différents supports.</p>
+        </div>
+
+        <div class="homepage__articles">
+            <article>
+                <img src="assets/img/accueil_art1.png" alt="logo The Walking Dead" class="homepage__articles__img-left">
+                <p class="homepage__articles__caption">Prenez goût à l’infâme évolution d’un personnage, devenant un gouverneur tyrannique.</p>
+                <p class="button-more"><a href=walkingdead.html>En savoir +</a></p>
+            </article>
+
+            <article>
+                <p class="homepage__articles__caption">Vivez l’incroyable aventure de Glass, un trappeur laissé pour mort qui entreprend un voyage de 300 km.</p>
+                <img src="assets/img/accueil_art2.png" alt="logo The Revenant" class="homepage__articles__img-right">
+                <p class="button-more"><a href=the_revenant.html>En savoir +</a></p>
+            </article>
+
+            <article>
+                <img src="assets/img/accueil_art3.png" alt="Photo représentant un survivaliste" class="homepage__articles__img-left">
+                <p class="homepage__articles__caption">Comprenez la survie sous différents aspects.</p>
+                <p class="button-more"><a href=survie.html>En savoir +</a></p>
+            </article>
+
+        </div>
+    
+    </main>
+
+    <footer class="footer">
+        <p class="footer__caption">
+            Mention Légale : “projet réalisé dans le cadre d’un exercice pédagogique au département 
+            <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a>” 
+        </p>
+        <img src="assets/img/mmi_logo_footer.png" alt="Logo du département MMI de Montbéliard" class="footer__img">
+    </footer>
+    
+    </main>
 </body>
 </html>
