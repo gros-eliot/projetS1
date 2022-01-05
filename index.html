@@ -4,6 +4,7 @@
     <link rel='stylesheet' href='src/css/style.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
     <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
     <script src="https://animejs.com/lib/anime.min.js"></script>
     <script src="src/js/fonctions.js"></script>
     <meta charset="UTF-8">
@@ -42,11 +43,15 @@
     </header>
 
     <main>
-        <div class="hero">
+        <img src="public/img/hero_bg-2.png" alt="Fond alternatif du hero" x-data="{heroBackgroundChange : false}">
+        <div class="hero"
+        x-on:click="heroBackgroundChange = !heroBackgroundChange"
+        x-on:show="heroBackgroundChange">
             <div class="hero__caption__div">
                 <h2 class="hero__caption">Explorez et survivez dans  différentes dimensions</h2>
             </div>
         </div>
+
 
 		<div class="carrousel">
 			<div class="carrousel3">
