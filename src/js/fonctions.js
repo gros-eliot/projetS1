@@ -1,3 +1,5 @@
+//carrousel
+
 function carrousel() {
     var carrousel__content = document.querySelectorAll('.carrousel__content');
     let d = 2000;

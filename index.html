@@ -43,10 +43,7 @@
     </header>
 
     <main>
-        <img src="public/img/hero_bg-2.png" alt="Fond alternatif du hero" x-data="{heroBackgroundChange : false}">
-        <div class="hero"
-        x-on:click="heroBackgroundChange = !heroBackgroundChange"
-        x-on:show="heroBackgroundChange">
+        <div class="hero">
             <div class="hero__caption__div">
                 <h2 class="hero__caption">Explorez et survivez dans  différentes dimensions</h2>
             </div>
@@ -92,6 +89,14 @@
 
         <div class="heading">
             <img src="public/img/accueil_heading.png" alt="Tente de survie" class="heading_img">
+
+            <script>
+                let click_heading = document.querySelector('heading__img'); 
+                click_heading.addEventListener('click', function(){
+                    this.style.backgroundImage = 'public/img/heading_img-2';
+                });
+            </script>
+
             <h2 class="heading__title">Voyagez</h2>
             <div class="title-redline-index"></div>
             <p class="heading__caption">À travers différentes histoires de survie issues de différents supports.</p>
