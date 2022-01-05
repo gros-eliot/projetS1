@@ -51,3 +51,7 @@ h3 {
 main {
     margin-top: 30%;
 }
+
+.quote {
+    font-size: var(--quote);
+}
