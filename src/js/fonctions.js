@@ -60,8 +60,8 @@ function cacherLegende1() {
 /*IMAGE ARTICLE 1-2*/
 function montrerLegende2() {
     return anime({
-        targets: '.caption-img1-2',
-        translateY: 790,
+        targets: '.legende2',
+        translateY: -100,
         autoplay: false,
         duration: 300,
         easing: 'linear'
@@ -70,13 +70,16 @@ function montrerLegende2() {
 
 function cacherLegende2() {
     return anime({
-        targets: '.caption-img1-2',
-        translateY: -1500,
+        targets: '.legende2',
+        translateY: 0,
         autoplay: false,
         duration: 300,
         easing: 'linear'
     }).play;
 }
+
+
+
 
 /*IMAGE ARTICLE 1-3*/
 function montrerLegende3() {
@@ -98,6 +101,9 @@ function cacherLegende3() {
         easing: 'linear'
     }).play;
 }
+
+
+
 
 /*IMAGE ARTICLE 1-4*/
 function montrerLegende4() {
