@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel='stylesheet' href='src/css/style.css'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header404">
+        <h1><a href="/" class="header__title">Evive</a></h1>
+    </header>
+    <main>
+        <h2>Page non trouvée (erreur 404)</h2>
+        <div class="title-redline"></div>
+        <h3>Vous recherchez quelque chose ?</h3>
+
+        <form action="https://google.com/" method="GET" 
+        x-data="{ q:'', }" 
+        x-on:submit="q = q + ' site:evive.eliotgros.fr'"
+        class="form404">
+            <label for="q" class="label404">Texte :</label>
+            <input type="text" id="q" name="q" x-model="q" class="input404">
+            <button type="submit" class="button404">Rechercher</button>
+        </form>
+
+        <h3>Les pages du site</h3>
+        <div class="title-redline"></div>
+        <ul class="menu__list404 listUnstyled">
+            <li class="menu404"><img src="public/img/Walking_dead_logo.svg" alt="logo menu" class="menu__logo404"><a href="walkingdead.html" class="link404">The Walking Dead</a></li>
+            <li class="menu404"><img src="public/img/Revenant_logo.svg" alt="logo menu" class="menu__logo404"><a href="the_revenant.html" class="link404">The Revenant</a></li>
+            <li class="menu404"><img src="public/img/Survie.svg" alt="logo menu" class="menu__logo404"><a href="survie.html" class="link404">La survie</a></li>
+            <li class="menu404"><img src="public/img/Info.svg" alt="logo menu" class="menu__logo404"><a href="a_propos.html" class="link404">À propos</a></li>
+            <li class="menu404"><img src="public/img/Projects.svg" alt="logo menu" class="menu__logo404"><a href="autres_projets.html" class="link404">Autres projets</a></li>
+            <li class="menu404"><img src="public/img/Contact.svg" alt="logo menu" class="menu__logo404"><a href="contact.html" class="link404">Contact</a></li>
+        </ul>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__caption">
+            Mention Légale : “projet réalisé dans le cadre d’un exercice pédagogique au département 
+            <a href="http://mmimontbeliard.com/" class="footer__link">MMI de Montbéliard</a>” 
+        </p>
+        <img src="public/img/mmi_logo_footer.png" alt="Logo du département MMI de Montbéliard" class="footer__img">
+    </footer>
+</body>
+</html>

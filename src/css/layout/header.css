@@ -21,3 +21,18 @@
 .header__menu-div {
     padding-left: 10%;
 }
+
+.header404 {
+    top: 0;
+    left: 0;
+    background-color: var(--marron-fonce);
+    margin: 0;
+    z-index: 5;
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

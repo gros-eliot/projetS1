@@ -1,0 +1,53 @@
+.input404 {
+    padding:2%;
+    margin: 1%;
+    border: 2px solid var(--bleu);
+}
+
+.form404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.button404 {
+    border: 2px solid var(--bleu);
+    font-family: 'Titillium Web', sans-serif;
+
+    padding: 5px;
+}
+
+.label404 {
+    width: 100px;
+    font-size: var(--main-text);
+    text-align: left;
+}
+
+.menu__list404 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu404 {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu__logo404 {
+    filter:brightness(0%);
+    padding-top: 5px;
+    padding-right: 10px;
+}
+.link404 {
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    color: var(--noir);
+    font-weight: bold;
+    font-size: var(--button);
+}
