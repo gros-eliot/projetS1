@@ -3,6 +3,9 @@
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,9 +48,23 @@
             </div>
         </div>
 
-        <div>
-            <!--carousel-->
-        </div>
+		<div class="exemples carrousel">
+			<div>
+				<h1>Carrousel 3 images</h1>
+			</div>
+			<div class="carrousel3">
+				<div class="carrousel__image">
+					<img id="img1" src="./public/img/carrousel1.jpg"/>
+					<img id="img2" src="./public/img/carrousel2.jpg"/>
+					<img id="img3" src="./public/img/carroussel3.jpg"/>
+				</div>
+			</div>
+		</div>
+		<script>
+			
+			carrousel();
+			
+		</script>
 
         <div class="heading">
             <img src="public/img/accueil_heading.png" alt="Tente de survie" class="heading_img">

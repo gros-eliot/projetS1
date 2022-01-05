@@ -1,0 +1,24 @@
+
+.carrousel {
+    display: block;
+}
+*/
+
+
+.exemples {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	row-gap: 0px;
+	column-gap: 0px;
+
+}
+.carrousel3 {
+	grid-column: 2;
+	grid-row: 2;
+	width: 100%;
+	padding: 0px;
+	position: relative;
+	overflow: hidden;
+}
+
+
