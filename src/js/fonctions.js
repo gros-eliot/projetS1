@@ -1,10 +1,10 @@
 function carrousel() {
-    var carrousel__image = document.querySelectorAll('.carrousel__image');
+    var carrousel__content = document.querySelectorAll('.carrousel__content');
     let d = 2000;
     let delta = 1000;
 
-    carrousel__image.forEach(function(img,indice) {
-        img.style.zIndex = carrousel__image.length - indice;
+    carrousel__content.forEach(function(img,indice) {
+        img.style.zIndex = carrousel__content.length - indice;
     });
 
     let anim153 = anime.timeline({
@@ -13,9 +13,9 @@ function carrousel() {
     });
 
     anim153.add({
-        targets: carrousel__image,
-        translateX: [{value: '500', duration: d},
-                     {value: '-500', duration: 0, delay: function(img,ind) {
+        targets: carrousel__content,
+        translateX: [{value: '361', duration: d},
+                     {value: '-361', duration: 0, delay: function(img,ind) {
                          if (ind == 0) return (2*delta)+d;
                          if (ind == 1) return delta;
                          return 0;
