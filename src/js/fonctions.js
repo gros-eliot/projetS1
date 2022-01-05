@@ -34,3 +34,88 @@ function carrousel() {
         }
     });
 }
+
+/*IMAGE ARTICLE 1-1*/
+function montrerLegende1() {
+    return anime({
+        targets: '.legende',
+        translateY: -100,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+function cacherLegende1() {
+    return anime({
+        targets: '.legende',
+        translateY: 0,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+
+/*IMAGE ARTICLE 1-2*/
+function montrerLegende2() {
+    return anime({
+        targets: '.caption-img1-2',
+        translateY: 790,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+function cacherLegende2() {
+    return anime({
+        targets: '.caption-img1-2',
+        translateY: -1500,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+/*IMAGE ARTICLE 1-3*/
+function montrerLegende3() {
+    return anime({
+        targets: '.caption-img1-3',
+        translateY: 1830,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+function cacherLegende3() {
+    return anime({
+        targets: '.caption-img1-3',
+        translateY: -1500,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+/*IMAGE ARTICLE 1-4*/
+function montrerLegende4() {
+    return anime({
+        targets: '.caption-img1-4',
+        translateY: 2440,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}
+
+function cacherLegende4() {
+    return anime({
+        targets: '.caption-img1-4',
+        translateY: -1500,
+        autoplay: false,
+        duration: 300,
+        easing: 'linear'
+    }).play;
+}

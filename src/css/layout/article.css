@@ -1,4 +1,4 @@
-.article :not(img, div, h3, .article2-end__caption, hr) {
+.article :not(img, div, h3, .article2-end__caption, hr, strong) {
     margin: 5% 10% 5% 10%;
 }
 
@@ -30,3 +30,35 @@
     padding: 3% 0% 3% 0%;
 }
 
+.caption-img1-2, .caption-img1-3, .caption-img1-4 {
+	position: absolute;
+	text-align: center;
+	width: 375px;
+	height: 50px;
+	margin: 0px;
+	padding: 0px;
+	color: var(--noir);
+	background-color: rgba(255, 255, 255, 0.8);
+	top:0;
+    left:0;
+	z-index: 1;
+}
+
+.legende {
+	position: relative;
+	text-align: center;
+	margin: 0px;
+	padding: 10px;
+    font-size: var(--quote);
+	color: var(--noir);
+	background-color: rgba(255, 255, 255, 0.5);
+	top:0;
+    left: 0;
+	z-index: 2;
+}
+
+
+.visionneuse {
+    height: 397px;
+    overflow: hidden;
+}

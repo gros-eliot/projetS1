@@ -3,6 +3,10 @@
 <head>
     <link rel='stylesheet' href='src/css/style.css'>
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+    <script src="https://unpkg.com/alpinejs@3.2.2/dist/cdn.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://animejs.com/lib/anime.min.js"></script>
+    <script src="src/js/fonctions.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -42,11 +46,28 @@
         <h2>The Walking Dead</h2>
         <div class="title-redline"></div>
         <h3>L'ascension du gouverneur</h3>
-        <img src="public/img/art1_1.png" alt="Un acteur de la série The Walking Dead">
+
         
+
+            <div class="visionneuse">
+                <div x-on:mouseover="montrerLegende1();"
+                x-on:mouseleave="cacherLegende1();">
+                    <img src="public/img/art1_1.png" alt="Un acteur de la série The Walking Dead"></div>
+                <p class="legende">Acteur de la série The Walking Dead</p>
+            </div>
+
         <h3>La survie face à la menace</h3>
+
+        <div x-on:mouseover="montrerLegende2();"
+        x-on:mouseleave="cacherLegende2();">
+        <div class="caption-img1-2">
+            <p>Arme de la série</p>
+        </div>
+        <div>
         <img src="public/img/art1_2.png" alt="Arme de la série">
-        <p>Dans l’univers de The Walking Dead, un monde
+        </div>
+
+        <p>Dans l’univers de <strong>The Walking Dead</strong>, un monde
             où la quasi totalité de la population est
             transformée en zombie. La survie est un
             élément extrêmement important. Les zombies
@@ -92,7 +113,17 @@
             de ce moment que le gouverneur devient
             instable. Tout va partir de travers...
         </p>
-        <img src="public/img/art1_3.png" alt="Horde de zombie (images de la série)">
+
+
+        <div x-on:mouseover="montrerLegende3();"
+        x-on:mouseleave="cacherLegende3();">
+        <div class="caption-img1-3">
+            <p>Horde de zombie (images de la série)</p>
+        </div>
+        <div>
+            <img src="public/img/art1_3.png" alt="Horde de zombie (images de la série)">
+        </div>
+
         <p class="quote">"Il reprend son .38 dans le salon avec le
             dernier chargeur - les six ultimes balles
             en sa possession - et le glisse dans sa
@@ -108,12 +139,18 @@
             collaboration entre humains, de la nourriture et
             pas de menaces. C’est ce que le gouverneur
             veut faire croire. En réalité le gouverneur n’a
-            plus de sens de l’humanité. Il organise des
+            plus de sens de l’<strong>humanité</strong>. Il organise des
             combats de prisonniers contre des zombies
             dans une arène afin de divertir son peuple. De
             plus il tronçonne les extrémités de ceux qui le
             contrarient.
         </p>
+
+        <div x-on:mouseover="montrerLegende4();"
+        x-on:mouseleave="cacherLegende4();">
+        <div class="caption-img1-4">
+            <p>Horde de zombie (images de la série)</p>
+        </div>
         <div class="article__img-center">
             <img src="public/img/art1_4.jpg" alt="Robert Kirkman">
         </div>
