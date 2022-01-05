@@ -13,4 +13,8 @@
     padding: 3%;
 }
 
+.card_right {
+    display: flex;
+    justify-content: flex-end;
+}
 

@@ -2,6 +2,7 @@
     background-color: var(--marron-fonce);
     display: flex;
     align-items: flex-end;
+    justify-content: center;
     flex-direction: row;
     padding: 6%;
 
