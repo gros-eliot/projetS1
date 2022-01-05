@@ -44,7 +44,7 @@
 	z-index: 1;
 }
 
-.legende, .legende2 {
+.legende, .legende2, .legende3, .legende4 {
 	position: relative;
 	text-align: center;
 	margin: 0px;
@@ -65,5 +65,15 @@
 
 .visionneuse2 {
     height: 100px;
+    overflow: hidden;
+}
+
+.visionneuse3 {
+    height: 264px;
+    overflow: hidden;
+}
+
+.visionneuse4 {
+    height: 264px;
     overflow: hidden;
 }

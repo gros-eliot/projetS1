@@ -84,8 +84,8 @@ function cacherLegende2() {
 /*IMAGE ARTICLE 1-3*/
 function montrerLegende3() {
     return anime({
-        targets: '.caption-img1-3',
-        translateY: 1830,
+        targets: '.legende3',
+        translateY: -100,
         autoplay: false,
         duration: 300,
         easing: 'linear'
@@ -94,22 +94,20 @@ function montrerLegende3() {
 
 function cacherLegende3() {
     return anime({
-        targets: '.caption-img1-3',
-        translateY: -1500,
+        targets: '.legende3',
+        translateY: 0,
         autoplay: false,
         duration: 300,
         easing: 'linear'
     }).play;
+
 }
-
-
-
 
 /*IMAGE ARTICLE 1-4*/
 function montrerLegende4() {
     return anime({
-        targets: '.caption-img1-4',
-        translateY: 2440,
+        targets: '.legende4',
+        translateY: -100,
         autoplay: false,
         duration: 300,
         easing: 'linear'
@@ -118,10 +116,11 @@ function montrerLegende4() {
 
 function cacherLegende4() {
     return anime({
-        targets: '.caption-img1-4',
-        translateY: -1500,
+        targets: '.legende4',
+        translateY: 0,
         autoplay: false,
         duration: 300,
         easing: 'linear'
     }).play;
+
 }
